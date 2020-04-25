@@ -26,7 +26,7 @@ def add_feedback(name, email, feedback):
     created=datetime.now() 
   )
   # Sends an email each time feedback is submitted
-  anvil.email.send(to="nelsonz@cwu.edu", # Change this to your email address!
+  anvil.email.send(to="", # Change this to your email address!
                    subject=f"Feedback from {name}",
                    text=f"""
   A new person has filled out the feedback form!
