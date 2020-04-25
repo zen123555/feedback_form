@@ -1,0 +1,37 @@
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {auto_create_missing_columns: false}
+- source: /runtime/services/anvil/email.yml
+  client_config: {}
+  server_config: {}
+package_name: Feedback_Form
+allow_embedding: true
+name: Feedback Form
+runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox}
+metadata: {}
+startup_form: Form1
+db_schema:
+- name: feedback
+  id: 51792
+  python_name: feedback
+  columns:
+    0mpT0QwIB0Q=:
+      name: created
+      type: datetime
+      admin_ui: {order: 3, width: 200}
+    IiOuff7GEsA=:
+      name: name
+      type: string
+      admin_ui: {order: 0, width: 200}
+    VQwOGNTrSLU=:
+      name: email
+      type: string
+      admin_ui: {order: 1, width: 200}
+    ft1Dsou+r+M=:
+      name: feedback
+      type: string
+      admin_ui: {order: 2, width: 200}
+  access: {python_name: feedback, app_id: FIQC5HL5MGIODASO, server: full, client: none,
+    table_id: 51792}
+renamed: true
